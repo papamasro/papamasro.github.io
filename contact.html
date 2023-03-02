@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo AND</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+    input,
+    textarea {
+      width: 240px;
+      background: #FFFFFF;
+      box-sizing: border-box;
+      border: 1px solid #D4D4D4;
+    }
+  </style>
+  <script>
+    // ===================================
+    // ScriptShow Web © 2000 - 2018
+    // Experiments UI / UX
+    // ===================================
+    //<![CDATA[
+    window.onerror = new Function("return true");
+
+    function sendMail() {
+      var link = "grupoand.construcciones@gmail.com"
+        + "?cc=grupoand.construcciones@gmail.com"
+        + "&subject=" + escape(document.getElementById('subject').value)
+        + "&body=" + escape(document.getElementById('comment').value);
+
+      window.location.href = "mailto:" + link;
+    }
+      //]]>
+  </script>
+</head>
+
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">Grupo AND</a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="know.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="img"></div>
+  <div class="center">
+    <div class="title">Hace tu consulta sin cargo</div>
+    <div>
+      <p>
+        <label>Asunto:</label><br>
+        <input id="subject" type="text"><br><br>
+        <label>Comentario:</label><br>
+        <textarea id="comment"></textarea><br><br>
+        <input type="button" value="Enviar" onclick="sendMail(); return false">
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
