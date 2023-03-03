@@ -78,12 +78,12 @@ nav .menu{
   text-align: center;
 }
 .center .title{
-  color: #fff;
+  color: black;
   font-size: 55px;
   font-weight: 600;
 }
 .center .sub_title{
-  color: #fff;
+  color: black;
   font-size: 52px;
   font-weight: 600;
 }
@@ -91,12 +91,12 @@ nav .menu{
   margin-top: 20px;
 }
 .center .btns button{
-  height: 55px;
-  width: 170px;
+  height: 65px;
+  width: 180px;
   border-radius: 5px;
   border: none;
-  margin: 0 10px;
-  border: 2px solid white;
+  margin: 0 20px;
+  border: 2px solid black;
   font-size: 20px;
   font-weight: 500;
   padding: 0 10px;
@@ -105,18 +105,21 @@ nav .menu{
   transition: all 0.3s ease;
 }
 .center .btns button:first-child{
-  color: #fff;
-  background: none;
+  color: black;
+  background: white;
 }
 .btns button:first-child:hover{
-  background: white;
+  background: none;
   color: black;
 }
 .center .btns button:last-child{
   background: white;
   color: black;
 }
-
+.btns button:last-child:hover{
+  background: none;
+  color: black;
+}
 #footer .twitter {
   background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
   background-repeat: no-repeat;
