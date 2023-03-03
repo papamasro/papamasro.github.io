@@ -56,18 +56,12 @@ nav .menu{
 .img{
   opacity: 80%;
   width: 100%;
-  height: 95vh;
+  height: 90vh;
   background-size: cover;
   background-position: center;
   position: relative;
 }
-.img::before{
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.4);
-}
+
 .center{
   position: absolute;
   top: 52%;
@@ -120,56 +114,13 @@ nav .menu{
   background: none;
   color: black;
 }
-#footer .twitter {
-  background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-#footer .linkedin {
-  background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
-  background-repeat: no-repeat;
-  background-position: -78px 0;
-}
-#footer .facebook {
-  background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
-  background-repeat: no-repeat;
-  background-position: -233px 0;
-}
-#footer .skype {
-  background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
-  background-repeat: no-repeat;
-  background-position: -156px 0;
-}
-#footer .flickr {
-  background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
-  background-repeat: no-repeat;
-  background-position: -310px 0;
-}
 #footer a {
   height: 56px;
   width: 56px;
   display: inline-block;
   margin: 30px;
 }
-#footer a:hover {
-  transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-}
-#footer .twitter:hover {
-  background-position: 0 -56px;
-}
-#footer .facebook:hover {
-  background-position: -233px -56px;
-}
-#footer .skype:hover {
-  background-position: -156px -56px;
-}
-#footer .linkedin:hover {
-  background-position: -78px -56px;
-}
-#footer .flickr:hover {
-  background-position: -310px -56px;
-}
+
 .bg-dark-1{
   background-color: black; 
 }
