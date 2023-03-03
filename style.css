@@ -54,8 +54,7 @@ nav .menu{
   color: black;
 }
 .img{
-  
-  background: url('img3.JPG')no-repeat;
+  opacity: 80%;
   width: 100%;
   height: 95vh;
   background-size: cover;
@@ -147,7 +146,7 @@ nav .menu{
   height: 56px;
   width: 56px;
   display: inline-block;
-  margin: 10px;
+  margin: 30px;
 }
 #footer a:hover {
   transition: all 0.3s ease-out;
@@ -171,3 +170,4 @@ nav .menu{
 .bg-dark-1{
   background-color: black; 
 }
+
