@@ -49,7 +49,13 @@
       </ul>
     </div>
   </nav>
-  <div class="img"></div>
+  <div>
+    <picture>
+      <source class="img" media="(min-width: 1000px)" srcset="img3.JPG">
+      <source class="img" media="(min-width: 270px)" srcset="img2.JPG">
+      <img class="img" src="img2.JPG" alt="imagealttext">
+    </picture>
+  </div>
   <div class="center">
     <div class="title">Hace tu consulta sin cargo</div>
     <div>
@@ -62,6 +68,14 @@
         <input id="tel" type="text"><br><br>
         <label>Email:</label><br>
         <input id="email" type="text"><br><br>
+
+        <label for="cars">Trabajo de:</label><br>
+        <select id="work" name="work">
+          <option value="Electricidad">Electricidad</option>
+          <option value="AireAcondicionado">Aire Acondicionado</option>
+          <option value="Carpinteria">Carpinteria</option>
+          <option value="Plomeria">Plomeria</option>
+        </select><br><br>
         <label>Mensaje:</label><br>
         <textarea id="comment"></textarea><br><br>
         <input type="button" value="Enviar" onclick="sendMail(); return false">
@@ -72,13 +86,13 @@
 <footer class="bg-dark-1">
   <section id="footer" class="py-5">
     <center>
-    <div class="container text-center">
-      <a href="#" class="twitter"></a>
-      <a href="#" class="linkedin"></a>
-      <a href="contact.html" class="facebook"></a>
-      <h6 class="m-0 mt-4 text-center text-white text-capitalize">Copyright &copy; 2020 designed by W3schoolweb</h6>
-    </div>
-  </center>
+      <div class="container text-center">
+        <a href="#" class="twitter"></a>
+        <a href="#" class="linkedin"></a>
+        <a href="contact.html" class="facebook"></a>
+      </div>
+    </center>
   </section>
 </footer>
+
 </html>
