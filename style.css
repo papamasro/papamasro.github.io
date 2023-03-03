@@ -103,16 +103,16 @@ nav .menu{
   background: white;
 }
 .btns button:first-child:hover{
-  background: none;
-  color: black;
+  background: black;
+  color: white;
 }
 .center .btns button:last-child{
   background: white;
   color: black;
 }
 .btns button:last-child:hover{
-  background: none;
-  color: black;
+  background: black;
+  color: white;
 }
 #footer a {
   height: 56px;
