@@ -4,18 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon"  href="favicon.ico"/>
   <title>Grupo AND</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <style>
-    input,
-    textarea {
-      width: 240px;
-      background: #FFFFFF;
-      box-sizing: border-box;
-      border: 1px solid #D4D4D4;
-    }
-  </style>
   <script>
     // ===================================
     // ScriptShow Web © 2000 - 2018
@@ -28,8 +21,7 @@
       var link = "grupoand.construcciones@gmail.com"
         + "?cc=grupoand.construcciones@gmail.com"
         + "&subject=" + escape(document.getElementById('subject').value)
-        + "&body=" + escape(document.getElementById('empresa').value) + " " + escape(document.getElementById('tel').value) + " " + escape(document.getElementById('email').value) + "\n" + escape(document.getElementById('comment').value);
-
+        + "&body=" + " Necesito un trabajo de: " +  escape(document.getElementById('work').value) + "\n Mi empresa es: " + escape(document.getElementById('empresa').value) + "\n Podes contactarme en telefono  " + escape(document.getElementById('tel').value) + ", o en el email: " + escape(document.getElementById('email').value) + "\n" + escape(document.getElementById('comment').value);
       window.location.href = "mailto:" + link;
     }
       //]]>
@@ -58,29 +50,27 @@
   </div>
   <div class="center">
     <div class="title">Hace tu consulta sin cargo</div>
-    <div>
-      <p>
+    <form onsubmit="sendMail(); return false">
         <label>Asunto:</label><br>
-        <input id="subject" type="text"><br><br>
+        <input required id="subject" type="text"><br><br>
         <label>Empresa:</label><br>
         <input id="empresa" type="text"><br><br>
         <label>Telefono:</label><br>
-        <input id="tel" type="text"><br><br>
+        <input required id="tel" type="tel" pattern="[0-9]"><br><br>
         <label>Email:</label><br>
-        <input id="email" type="text"><br><br>
-
+        <input required type="email" id="email" name="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"><br><br>
         <label for="cars">Trabajo de:</label><br>
-        <select id="work" name="work">
+        <select required id="work" name="work">
+          <option disabled selected >Seleccionar</option>
           <option value="Electricidad">Electricidad</option>
           <option value="AireAcondicionado">Aire Acondicionado</option>
-          <option value="Carpinteria">Carpinteria</option>
           <option value="Plomeria">Plomeria</option>
+          <option value="Otro">otro</option>
         </select><br><br>
         <label>Mensaje:</label><br>
-        <textarea id="comment"></textarea><br><br>
-        <input type="button" value="Enviar" onclick="sendMail(); return false">
-      </p>
-    </div>
+        <textarea required id="comment"></textarea><br><br>
+        <input type="submit" value="Enviar">
+      </form>
   </div>
 </body>
 <footer class="bg-dark-1">
@@ -94,5 +84,4 @@
   </center>
   </section>
 </footer>
-
 </html>
