@@ -8,8 +8,6 @@
   font-family: 'Poppins',sans-serif;
 }
 
-
-
 ::selection{
   color: #000;
   background: #fff;
@@ -86,9 +84,21 @@ nav .menu{
 
 
 
+.centerContact{
+  position: relative;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
 
-
-
+.centerContact .title{
+  color: black;
+  font-size: 55px;
+  font-weight: 600;
+}
 
 
 .center{

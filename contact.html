@@ -45,40 +45,39 @@
         </ul>
       </div>
     </nav>
-    <main>
   </header>
-
-  <div>
-    <picture>
-      <source class="img" media="(min-width: 1000px)" srcset="img3.JPG">
-      <img class="img" src="img2.JPG" alt="imagealttext">
-    </picture>
-  </div>
-  <div class="center">
-    <div class="title">Hace tu consulta sin cargo</div>
-    <form onsubmit="sendMail(); return false">
-      <label>Asunto:</label><br>
-      <input required id="subject" type="text"><br><br>
-      <label>Empresa:</label><br>
-      <input id="empresa" type="text"><br><br>
-      <label>Telefono:</label><br>
-      <input required id="tel" type="tel" pattern="[0-9]{10}"><br><br>
-      <label>Email:</label><br>
-      <input required type="email" id="email" name="email"
-        pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"><br><br>
-      <label for="cars">Trabajo de:</label><br>
-      <select required id="work" name="work">
-        <option disabled selected>Seleccionar</option>
-        <option value="Electricidad">Electricidad</option>
-        <option value="AireAcondicionado">Aire Acondicionado</option>
-        <option value="Plomeria">Plomeria</option>
-        <option value="Otro">otro</option>
-      </select><br><br>
-      <label>Mensaje:</label><br>
-      <textarea required id="comment"></textarea><br><br>
-      <input type="submit" value="Enviar">
-    </form>
-  </div>
+  <main>
+    <div>
+      <picture>
+        <source class="img" media="(min-width: 1000px)" srcset="img3.JPG">
+        <img class="img" src="img2.JPG" alt="imagealttext">
+      </picture>
+    </div>
+    <div class="centerContact">
+      <div class="title">Hace tu consulta sin cargo</div>
+      <form onsubmit="sendMail(); return false">
+        <label>Asunto:</label><br>
+        <input required id="subject" type="text"><br><br>
+        <label>Empresa:</label><br>
+        <input id="empresa" type="text"><br><br>
+        <label>Telefono:</label><br>
+        <input required id="tel" type="tel" pattern="[0-9]{10}"><br><br>
+        <label>Email:</label><br>
+        <input required type="email" id="email" name="email"
+          pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"><br><br>
+        <label for="cars">Trabajo de:</label><br>
+        <select required id="work" name="work">
+          <option disabled selected>Seleccionar</option>
+          <option value="Electricidad">Electricidad</option>
+          <option value="AireAcondicionado">Aire Acondicionado</option>
+          <option value="Plomeria">Plomeria</option>
+          <option value="Otro">otro</option>
+        </select><br><br>
+        <label>Mensaje:</label><br>
+        <textarea required id="comment"></textarea><br><br>
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
   </main>
 
   <footer class="rounded-social-buttons">
