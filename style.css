@@ -100,6 +100,26 @@ nav .menu{
   font-weight: 600;
 }
 
+.centerTitle{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+
+.centerTitleContact{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
 
 .center{
   position: absolute;
@@ -110,12 +130,12 @@ nav .menu{
   padding: 0 20px;
   text-align: center;
 }
-.center .title{
+.centerTitle .title{
   color: black;
   font-size: 55px;
   font-weight: 600;
 }
-.center .sub_title{
+.centerTitle .sub_title{
   vertical-align:text-top;
   color: black;
   font-size: 52px;
