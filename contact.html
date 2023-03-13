@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon"  href="favicon.ico"/>
+  <link rel="icon" href="favicon.ico" />
   <title>Grupo AND</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
     integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
     crossorigin="anonymous"></script>
   <script>
@@ -23,7 +23,7 @@
       var link = "grupoand.construcciones@gmail.com"
         + "?cc=grupoand.construcciones@gmail.com"
         + "&subject=" + escape(document.getElementById('subject').value)
-        + "&body=" + "Necesito un trabajo de: " +  escape(document.getElementById('work').value) + ", Mi empresa es: " + escape(document.getElementById('empresa').value) + ", Podes contactarme en telefono  " + escape(document.getElementById('tel').value) + ", o en el email: " + escape(document.getElementById('email').value) + " " + escape(document.getElementById('comment').value);
+        + "&body=" + "Necesito un trabajo de: " + escape(document.getElementById('work').value) + ", Mi empresa es: " + escape(document.getElementById('empresa').value) + ", Podes contactarme en telefono  " + escape(document.getElementById('tel').value) + ", o en el email: " + escape(document.getElementById('email').value) + " " + escape(document.getElementById('comment').value);
       window.location.href = "mailto:" + link;
     }
       //]]>
@@ -31,18 +31,23 @@
 </head>
 
 <body>
-  <nav>
-    <div class="menu">
-      <div class="logo">
-        <a href="#">Grupo AND</a>
+  <header>
+
+    <nav>
+      <div class="menu">
+        <div class="logo">
+          <a href="#">Grupo AND</a>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
       </div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </div>
-  </nav>
+    </nav>
+    <main>
+  </header>
+
   <div>
     <picture>
       <source class="img" media="(min-width: 1000px)" srcset="img3.JPG">
@@ -52,32 +57,34 @@
   <div class="center">
     <div class="title">Hace tu consulta sin cargo</div>
     <form onsubmit="sendMail(); return false">
-        <label>Asunto:</label><br>
-        <input required id="subject" type="text"><br><br>
-        <label>Empresa:</label><br>
-        <input id="empresa" type="text"><br><br>
-        <label>Telefono:</label><br>
-        <input required id="tel" type="tel" pattern="[0-9]{10}"><br><br>
-        <label>Email:</label><br>
-        <input required type="email" id="email" name="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"><br><br>
-        <label for="cars">Trabajo de:</label><br>
-        <select required id="work" name="work">
-          <option disabled selected >Seleccionar</option>
-          <option value="Electricidad">Electricidad</option>
-          <option value="AireAcondicionado">Aire Acondicionado</option>
-          <option value="Plomeria">Plomeria</option>
-          <option value="Otro">otro</option>
-        </select><br><br>
-        <label>Mensaje:</label><br>
-        <textarea required id="comment"></textarea><br><br>
-        <input type="submit" value="Enviar">
-      </form>
+      <label>Asunto:</label><br>
+      <input required id="subject" type="text"><br><br>
+      <label>Empresa:</label><br>
+      <input id="empresa" type="text"><br><br>
+      <label>Telefono:</label><br>
+      <input required id="tel" type="tel" pattern="[0-9]{10}"><br><br>
+      <label>Email:</label><br>
+      <input required type="email" id="email" name="email"
+        pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"><br><br>
+      <label for="cars">Trabajo de:</label><br>
+      <select required id="work" name="work">
+        <option disabled selected>Seleccionar</option>
+        <option value="Electricidad">Electricidad</option>
+        <option value="AireAcondicionado">Aire Acondicionado</option>
+        <option value="Plomeria">Plomeria</option>
+        <option value="Otro">otro</option>
+      </select><br><br>
+      <label>Mensaje:</label><br>
+      <textarea required id="comment"></textarea><br><br>
+      <input type="submit" value="Enviar">
+    </form>
   </div>
+  </main>
+
   <footer class="rounded-social-buttons">
     <section id="footer" class="py-5">
       <div class="container text-center">
-        <a class="social-button linkedin" href="contact.html" target="_blank"><i
-          class="fa fa-envelope"></i></a>
+        <a class="social-button linkedin" href="contact.html" target="_blank"><i class="fa fa-envelope"></i></a>
         <a class="social-button whatsapp"
           href="https://wa.me/+5491162270026?text=Hola, Te contacto desde la web por una consulta." target="_blank"><i
             class="fab fa-whatsapp"></i></a>
