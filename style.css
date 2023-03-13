@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
 *{
   margin: 0;
   padding: 0;
@@ -53,6 +55,13 @@ nav .menu{
   background: #fff;
   color: black;
 }
+
+
+
+
+
+
+
 .img{
   opacity: 60%;
   width: 100%;
@@ -71,6 +80,13 @@ nav .menu{
   height: 100%;
   width: 100%;
 }
+
+
+
+
+
+
+
 
 .center{
   position: absolute;
@@ -125,12 +141,13 @@ nav .menu{
   background: black;
   color: white;
 }
-#footer a {
-  height: 56px;
-  width: 56px;
-  display: inline-block;
-  margin: 30px;
-}
+
+
+
+
+
+
+
 
 input[type=text] {
   padding:5px; 
@@ -198,12 +215,28 @@ textarea{
 }
 
 
+
+
+
+
+
+
+
+
+
+
 .rounded-social-buttons {
   text-align: center;
   background-color: #000;
 
 }
 
+#footer a {
+  height: 56px;
+  width: 56px;
+  display: inline-block;
+  margin: 30px;
+}
 .rounded-social-buttons .social-button {
   display: inline-block;
   position: relative;
