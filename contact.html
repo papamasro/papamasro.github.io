@@ -56,16 +56,16 @@
     <div class="centerContact">
       <div class="title">Consultá sin cargo</div>
       <form onsubmit="sendMail(); return false">
-        <label>Asunto:</label><br>
+        <label><b>Asunto:</b></label><br>
         <input required id="subject" type="text"><br><br>
-        <label>Empresa:</label><br>
+        <label><b>Empresa:</b></label><br>
         <input id="empresa" type="text"><br><br>
-        <label>Telefono:</label><br>
+        <label><b>Telefono:</b></label><br>
         <input required id="tel" type="tel" pattern="[0-9]{10}"><br><br>
-        <label>Email:</label><br>
+        <label><b>Email:</b></label><br>
         <input required type="email" id="email" name="email"
           pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"><br><br>
-        <label for="cars">Trabajo de:</label><br>
+        <label for="cars"><b>Trabajo de:</b></label><br>
         <select required id="work" name="work">
           <option disabled selected>Seleccionar</option>
           <option value="Electricidad">Electricidad</option>
@@ -73,7 +73,7 @@
           <option value="Plomeria">Plomeria</option>
           <option value="Otro">otro</option>
         </select><br><br>
-        <label>Mensaje:</label><br>
+        <label><b>Mensaje:</b></label><br>
         <textarea required id="comment"></textarea><br><br>
         <input type="submit" value="Enviar">
       </form>

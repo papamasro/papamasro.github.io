@@ -84,6 +84,8 @@ nav .menu{
 
 
 
+
+
 .centerContact{
   position: absolute;
   top: 52%;
@@ -99,6 +101,8 @@ nav .menu{
   font-size: 55px;
   font-weight: 600;
 }
+
+
 
 .centerTitle{
   position: absolute;
@@ -229,6 +233,7 @@ input[type=submit] {
   cursor:pointer;
   -webkit-border-radius: 5px;
   border-radius: 5px; 
+  margin-bottom: 30px;
 }
 
 input,
@@ -246,11 +251,6 @@ textarea{
   box-sizing: border-box;
   border: 1px solid #D4D4D4;
 }
-
-
-
-
-
 
 
 
