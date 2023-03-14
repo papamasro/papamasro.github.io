@@ -97,6 +97,7 @@ nav .menu{
 }
 
 .centerContact .title{
+  margin-top: 300px;
   color: black;
   font-size: 55px;
   font-weight: 600;
@@ -140,13 +141,14 @@ nav .menu{
   font-weight: 600;
 }
 .centerTitle .sub_title{
+  margin-top: 100px;
   vertical-align:text-top;
   color: black;
   font-size: 52px;
   font-weight: 600;
 }
 .center .btns{
-  margin-top: 20px;
+  margin-top: 320px;
 }
 .center .btns button{
   height: 65px;
