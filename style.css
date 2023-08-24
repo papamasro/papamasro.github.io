@@ -94,7 +94,7 @@ nav .menu {
   height: 85vh;
   background-size: cover;
   background-position: center;
-  background-image: url('https://wp.rockfordconstruction.com/wp-content/uploads/2019/11/Downtown-GR-Office-1.jpg');
+  background-image: url('./images/dalton.jpg');
   position: relative;
 }
 
@@ -118,7 +118,7 @@ nav .menu {
 }
 
 .form-container {
-  background-image: url('https://wp.rockfordconstruction.com/wp-content/uploads/2019/11/Downtown-GR-Office-1.jpg');
+  background-image: url('./images/Downtown.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
