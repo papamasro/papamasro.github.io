@@ -1,0 +1,85 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+  }
+  
+  /* Estilos para la imagen principal */
+  .img {
+    opacity: 60%;
+    width: 100%;
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    vertical-align: top;
+    position: relative;
+  }
+  
+  .centerTitle {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .center {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .center .btns button {
+    height: 65px;
+    width: 180px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px;
+    border: 2px solid black;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .center .btns button:first-child {
+    color: black;
+    background: white;
+  }
+  
+  .center .btns button:first-child:hover {
+    background: black;
+    color: white;
+  }
+  
+  .center .btns button:last-child {
+    background: white;
+    color: black;
+  }
+  
+  .center .btns button:last-child:hover {
+    background: black;
+    color: white;
+  }
+  
+  /* Media query para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .center .btns {
+      margin-top: 20px;
+    }
+  }
+  

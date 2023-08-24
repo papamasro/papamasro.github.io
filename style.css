@@ -19,6 +19,8 @@ nav {
   background: #1b1b1b;
   width: 100%;
   padding: 10px 0;
+  max-height: 80px; /* Ajusta este valor según tus necesidades */
+
   z-index: 12;
 }
 
@@ -31,12 +33,27 @@ nav .menu {
   padding: 0 20px;
 }
 
-.menu .logo a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 25px;
-  font-weight: 600;
+
+/* Ajusta el tamaño de la imagen del logo */
+.logo img {
+  max-height: 100%; /* La imagen se ajustará al 100% de la altura del encabezado */
+  max-width: 100%; /* La imagen se ajustará al 100% del ancho del encabezado */
 }
+
+/* Alinea el logo verticalmente */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Agrega espacio alrededor del logo */
+.logo a {
+  padding: 5px;
+  padding-bottom: 0px !important;
+  max-width: 90px;
+  margin-left: 10px;
+}
+
 
 .menu ul {
   display: inline-flex;
@@ -72,41 +89,59 @@ nav .menu {
 }
 
 .img {
-  opacity: 60%;
+  opacity: 70%;
   width: 100%;
   height: 85vh;
   background-size: cover;
   background-position: center;
-  vertical-align: top;
+  background-image: url('https://wp.rockfordconstruction.com/wp-content/uploads/2019/11/Downtown-GR-Office-1.jpg');
   position: relative;
 }
+
 
 .centerpdf {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: 100px;
   transform: translate(-50%, -50%);
-  height: 100%;
   width: 100%;
+  max-width: 1200px; /* Ajusta el valor según tu preferencia */
+  height: 100%;
+  overflow-x: auto; /* Agrega scroll horizontal si el PDF es demasiado ancho */
+}
+
+.centerpdf img {
+  display: block;
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
+}
+
+.form-container {
+  background-image: url('https://wp.rockfordconstruction.com/wp-content/uploads/2019/11/Downtown-GR-Office-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0; /* Añade espacio alrededor del formulario */
 }
 
 .centerContact {
-  position: absolute;
-  top: 52%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative; /* Cambiamos la posición a relativa */
+  margin-top: 20px; /* Agregamos un margen superior */
   width: 100%;
   padding: 0 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .centerContact .title {
-  margin-top: 300px;
-  color: black;
-  font-size: 55px;
-  font-weight: 600;
-  margin-bottom: 20px
+  margin-top: 40px;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: Gotham;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08471rem;
 }
 
 .centerTitle {
@@ -129,52 +164,109 @@ nav .menu {
   text-align: center;
 }
 
+.centerContact form {
+  text-align: left; /* Alinea el formulario a la izquierda */
+}
+
+.centerContact label {
+  margin-bottom: 5px;
+  color: white;
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+  font-family: Gotham;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08471rem;
+}
+.centerContact input,
+.centerContact select,
+.centerContact textarea {
+  width: 100%;
+  height: 30px; /* Altura más pequeña */
+  padding: 5px;
+  margin-bottom: 5px; /* Margen inferior reducido */
+  border: 1px solid #D4D4D4;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+}
+
+.centerContact textarea {
+  height: 80px; /* Altura más pequeña para el área de texto */
+}
+
+.centerContact input[type="submit"] {
+  width: 100px;
+  height: 50px; /* Altura ligeramente mayor para el botón */
+  font-size: 14px; /* Tamaño de fuente más grande para el botón */
+  background: transparent !important;
+  color: white !important;
+ border: 1px solid white;
+ font-weight: 900;
+ text-transform: uppercase;
+ letter-spacing: 0.08471rem;
+}
+
+
+
+
+
 .center {
   position: absolute;
-  top: 52%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  padding: 0 20px;
-  text-align: center;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  text-align: left;
+  z-index: 1;
+  padding-left: 20px;
 }
 
 .centerTitle .title {
-  color: black;
-  font-size: 55px;
-  font-weight: 600;
-}
-
-.centerTitle .sub_title {
-  margin-top: 100px;
-  vertical-align: text-top;
-  color: black;
+  color: white;
   font-size: 40px;
   font-weight: 600;
 }
 
+.centerTitle .sub_title {
+  margin-top: 20px;
+  vertical-align: text-top;
+  color: white;
+  font-size: 28px;
+  text-align: left;
+  margin-left: 20px;
+  font-family: Gotham;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08471rem;
+}
+
 .center .btns {
-  margin-top: 320px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alineamos los botones a la izquierda */
 }
 
 .center .btns button {
-  height: 65px;
-  width: 180px;
+  height: auto; /* Usamos la altura automática para adaptarse al contenido */
   border-radius: 5px;
   border: none;
-  margin: 20px;
-  border: 2px solid black;
-  font-size: 20px;
-  font-weight: 500;
-  padding: 0 10px;
+  margin: 10px;
+  margin-top: 30px;
+  padding: 10px 20px; /* Ajustamos el padding horizontal */
   cursor: pointer;
   outline: none;
   transition: all 0.3s ease;
+  font-size: 0.84706rem;
+  line-height: 1.27059rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.13rem;
+  white-space: nowrap; /* Evitamos que el texto se divida en múltiples líneas */
 }
 
 .center .btns button:first-child {
-  color: black;
-  background: white;
+  color: white;
+  background: #80b500;
 }
 
 .btns button:first-child:hover {
@@ -183,8 +275,9 @@ nav .menu {
 }
 
 .center .btns button:last-child {
-  background: white;
-  color: black;
+  background: transparent;
+  color: white;
+ border: 1px solid white;
 }
 
 .btns button:last-child:hover {
@@ -343,4 +436,22 @@ input[type=submit]:hover {
   color: purple;
   background: #fefefe;
   border-color: purple;
+}
+
+
+.video-wrapper {
+  width: 100%;
+  height: 90vh; /* Ajustar la altura de la ventana del navegador */
+  position: relative;
+  overflow: hidden;
+}
+
+.video-wrapper video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1; /* Mover el video detrás de los botones */
 }

@@ -1,0 +1,42 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+  }
+  
+  /* Estilos para la imagen principal */
+  .img {
+    opacity: 60%;
+    width: 100%;
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    vertical-align: top;
+    position: relative;
+  }
+  
+  .centerpdf {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 100px;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Media query para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .centerpdf {
+      /* ... (otros estilos para centro de imágenes en pantallas pequeñas) */
+    }
+  }
+  
+  /* Estilos para el pie de página */
+  /* ... (otros estilos para el pie de página) */
