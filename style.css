@@ -1,25 +1,28 @@
+/* Importa la fuente de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-
-*{
+/* Estilos generales */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-::selection{
+::selection {
   color: #000;
   background: #fff;
 }
-nav{
+
+nav {
   position: fixed;
   background: #1b1b1b;
   width: 100%;
   padding: 10px 0;
   z-index: 12;
 }
-nav .menu{
+
+nav .menu {
   max-width: 1250px;
   margin: auto;
   display: flex;
@@ -27,23 +30,28 @@ nav .menu{
   justify-content: space-between;
   padding: 0 20px;
 }
-.menu .logo a{
+
+.menu .logo a {
   text-decoration: none;
   color: #fff;
   font-size: 25px;
   font-weight: 600;
 }
-.menu ul{
+
+.menu ul {
   display: inline-flex;
 }
-.menu ul li{
+
+.menu ul li {
   list-style: none;
   margin-left: 7px;
 }
-.menu ul li:first-child{
+
+.menu ul li:first-child {
   margin-left: 0px;
 }
-.menu ul li a{
+
+.menu ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 18px;
@@ -52,21 +60,18 @@ nav .menu{
   border-radius: 5px;
   transition: all 0.3s ease;
 }
-.menu ul li a:hover{
+
+.menu ul li a:hover {
   background: #fff;
   color: black;
 }
-
-
 
 .responsive {
   width: 70%;
   height: auto;
 }
 
-
-
-.img{
+.img {
   opacity: 60%;
   width: 100%;
   height: 85vh;
@@ -76,7 +81,7 @@ nav .menu{
   position: relative;
 }
 
-.centerpdf{
+.centerpdf {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -86,11 +91,7 @@ nav .menu{
   width: 100%;
 }
 
-
-
-
-
-.centerContact{
+.centerContact {
   position: absolute;
   top: 52%;
   left: 50%;
@@ -100,17 +101,15 @@ nav .menu{
   text-align: center;
 }
 
-.centerContact .title{
+.centerContact .title {
   margin-top: 300px;
   color: black;
   font-size: 55px;
   font-weight: 600;
-  margin-bottom:20px
+  margin-bottom: 20px
 }
 
-
-
-.centerTitle{
+.centerTitle {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -120,8 +119,7 @@ nav .menu{
   text-align: center;
 }
 
-
-.centerTitleContact{
+.centerTitleContact {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -131,7 +129,7 @@ nav .menu{
   text-align: center;
 }
 
-.center{
+.center {
   position: absolute;
   top: 52%;
   left: 50%;
@@ -140,22 +138,26 @@ nav .menu{
   padding: 0 20px;
   text-align: center;
 }
-.centerTitle .title{
+
+.centerTitle .title {
   color: black;
   font-size: 55px;
   font-weight: 600;
 }
-.centerTitle .sub_title{
+
+.centerTitle .sub_title {
   margin-top: 100px;
-  vertical-align:text-top;
+  vertical-align: text-top;
   color: black;
   font-size: 40px;
   font-weight: 600;
 }
-.center .btns{
+
+.center .btns {
   margin-top: 320px;
 }
-.center .btns button{
+
+.center .btns button {
   height: 65px;
   width: 180px;
   border-radius: 5px;
@@ -169,68 +171,50 @@ nav .menu{
   outline: none;
   transition: all 0.3s ease;
 }
-.center .btns button:first-child{
+
+.center .btns button:first-child {
   color: black;
   background: white;
 }
-.btns button:first-child:hover{
-  background: black;
-  color: white;
-}
-.center .btns button:last-child{
-  background: white;
-  color: black;
-}
-.btns button:last-child:hover{
+
+.btns button:first-child:hover {
   background: black;
   color: white;
 }
 
-
-
-
-
-
-
-
-input[type=text] {
-  padding:5px; 
-  border:2px solid #ccc; 
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+.center .btns button:last-child {
+  background: white;
+  color: black;
 }
 
-input[type=tel] {
-  padding:5px; 
-  border:2px solid #ccc; 
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+.btns button:last-child:hover {
+  background: black;
+  color: white;
 }
 
-input[type=email] {
-  padding:5px; 
-  border:2px solid #ccc; 
-  -webkit-border-radius: 5px;
+input[type=text],
+input[type=tel],
+input[type=email],
+textarea,
+select {
+  width: 240px;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  border: 1px solid #D4D4D4;
+  padding: 5px;
   border-radius: 5px;
 }
 
 textarea {
-  padding:5px; 
-  border:2px solid #ccc; 
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  width: 240px;
+  height: 100px;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  border: 1px solid #D4D4D4;
 }
-
-select {
-  padding:5px; 
-  border:2px solid #ccc; 
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-}
-
 
 input[type=text]:focus {
-  border-color:#333;
+  border-color: #333;
 }
 
 input[type=submit] {
@@ -248,42 +232,20 @@ input[type=submit] {
   transition: all 0.3s ease;
 }
 
-input[type=submit]:last-child{
+input[type=submit]:last-child {
   background: white;
   color: black;
 }
-input[type=submit]:hover{
+
+input[type=submit]:hover {
   background: black;
   color: white;
 }
 
-
-input,
-textarea,select {
-  width: 240px;
-  background: #FFFFFF;
-  box-sizing: border-box;
-  border: 1px solid #D4D4D4;
-}
-
-textarea{
-  width: 240px;
-  height: 100px;
-  background: #FFFFFF;
-  box-sizing: border-box;
-  border: 1px solid #D4D4D4;
-}
-
-
-
-
-
-
-
+/* Rounded Social Buttons */
 .rounded-social-buttons {
   text-align: center;
   background-color: #000;
-
 }
 
 #footer a {
@@ -292,6 +254,7 @@ textarea{
   display: inline-block;
   margin: 30px;
 }
+
 .rounded-social-buttons .social-button {
   display: inline-block;
   position: relative;
@@ -312,13 +275,18 @@ textarea{
   margin-bottom: 0.25rem;
 }
 
-.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+.rounded-social-buttons .social-button:hover,
+.rounded-social-buttons .social-button:focus {
   -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
-.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
+.rounded-social-buttons .fa-twitter,
+.rounded-social-buttons .fa-facebook-f,
+.rounded-social-buttons .fa-linkedin,
+.rounded-social-buttons .fa-youtube,
+.rounded-social-buttons .fa-instagram {
   font-size: 25px;
 }
 
@@ -326,7 +294,8 @@ textarea{
   background: #3b5998;
 }
 
-.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+.rounded-social-buttons .social-button.facebook:hover,
+.rounded-social-buttons .social-button.facebook:focus {
   color: #3b5998;
   background: #fefefe;
   border-color: #3b5998;
@@ -336,7 +305,8 @@ textarea{
   background: #55acee;
 }
 
-.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+.rounded-social-buttons .social-button.twitter:hover,
+.rounded-social-buttons .social-button.twitter:focus {
   color: #55acee;
   background: #fefefe;
   border-color: #55acee;
@@ -346,7 +316,8 @@ textarea{
   background: #007bb5;
 }
 
-.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+.rounded-social-buttons .social-button.linkedin:hover,
+.rounded-social-buttons .social-button.linkedin:focus {
   color: #007bb5;
   background: #fefefe;
   border-color: #007bb5;
@@ -356,7 +327,8 @@ textarea{
   background: green;
 }
 
-.rounded-social-buttons .social-button.whatsapp:hover, .rounded-social-buttons .social-button.whatsapp:focus {
+.rounded-social-buttons .social-button.whatsapp:hover,
+.rounded-social-buttons .social-button.whatsapp:focus {
   color: green;
   background: #fefefe;
   border-color: green;
@@ -366,7 +338,8 @@ textarea{
   background: purple;
 }
 
-.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+.rounded-social-buttons .social-button.instagram:hover,
+.rounded-social-buttons .social-button.instagram:focus {
   color: purple;
   background: #fefefe;
   border-color: purple;
