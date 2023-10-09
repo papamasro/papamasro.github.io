@@ -20,7 +20,6 @@ nav {
   width: 100%;
   padding: 10px 0;
   max-height: 80px; /* Ajusta este valor según tus necesidades */
-
   z-index: 12;
 }
 
@@ -32,7 +31,6 @@ nav .menu {
   justify-content: space-between;
   padding: 0 20px;
 }
-
 
 /* Ajusta el tamaño de la imagen del logo */
 .logo img {
@@ -53,7 +51,6 @@ nav .menu {
   max-width: 90px;
   margin-left: 10px;
 }
-
 
 .menu ul {
   display: inline-flex;
@@ -98,7 +95,6 @@ nav .menu {
   position: relative;
 }
 
-
 .centerpdf {
   position: absolute;
   top: 50%;
@@ -120,9 +116,10 @@ nav .menu {
 .form-container {
   background-image: url('./images/Downtown.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center top; /* Alinea el fondo en la parte superior */
   background-repeat: no-repeat;
-  padding: 50px 0; /* Añade espacio alrededor del formulario */
+  padding: 50px 0;
+  min-height: 100vh; /* Estira el fondo verticalmente */
 }
 
 .centerContact {
@@ -139,6 +136,50 @@ nav .menu {
   font-size: 30px;
   margin-bottom: 20px;
   font-family: Gotham;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08471rem;
+}
+
+.centerContact form {
+  text-align: left; /* Alinea el formulario a la izquierda */
+}
+
+.centerContact label {
+  margin-bottom: 5px;
+  color: white;
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+  font-family: Gotham;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08471rem;
+}
+
+.centerContact input,
+.centerContact select,
+.centerContact textarea {
+  width: 300px; /* Establece el ancho deseado */
+  height: 40px; /* Establece la altura deseada */
+  background: #FFFFFF;
+  box-sizing: border-box;
+  border: 1px solid #D4D4D4;
+  padding: 5px;
+  margin-bottom: 5px; /* Margen inferior reducido */
+  border-radius: 5px;
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+}
+
+.centerContact textarea {
+  height: 100px; /* Altura más pequeña para el área de texto */
+}
+
+.centerContact input[type="submit"] {
+  width: 100px;
+  height: 50px; /* Altura ligeramente mayor para el botón */
+  font-size: 14px; /* Tamaño de fuente más grande para el botón */
+  background: transparent !important;
+  color: white !important;
+  border: 1px solid white;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.08471rem;
@@ -163,52 +204,6 @@ nav .menu {
   padding: 0 20px;
   text-align: center;
 }
-
-.centerContact form {
-  text-align: left; /* Alinea el formulario a la izquierda */
-}
-
-.centerContact label {
-  margin-bottom: 5px;
-  color: white;
-  font-size: 14px; /* Tamaño de fuente más pequeño */
-  font-family: Gotham;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.08471rem;
-}
-.centerContact input,
-.centerContact select,
-.centerContact textarea {
-  width: 100%;
-  height: 30px; /* Altura más pequeña */
-  padding: 5px;
-  margin-bottom: 5px; /* Margen inferior reducido */
-  border: 1px solid #D4D4D4;
-  border-radius: 5px;
-  box-sizing: border-box;
-  font-size: 14px; /* Tamaño de fuente más pequeño */
-}
-
-.centerContact textarea {
-  height: 80px; /* Altura más pequeña para el área de texto */
-}
-
-.centerContact input[type="submit"] {
-  width: 100px;
-  height: 50px; /* Altura ligeramente mayor para el botón */
-  font-size: 14px; /* Tamaño de fuente más grande para el botón */
-  background: transparent !important;
-  color: white !important;
- border: 1px solid white;
- font-weight: 900;
- text-transform: uppercase;
- letter-spacing: 0.08471rem;
-}
-
-
-
-
 
 .center {
   position: absolute;
@@ -277,7 +272,7 @@ nav .menu {
 .center .btns button:last-child {
   background: transparent;
   color: white;
- border: 1px solid white;
+  border: 1px solid white;
 }
 
 .btns button:last-child:hover {
@@ -290,7 +285,7 @@ input[type=tel],
 input[type=email],
 textarea,
 select {
-  width: 240px;
+  width: 300px; /* Establece el ancho deseado */
   background: #FFFFFF;
   box-sizing: border-box;
   border: 1px solid #D4D4D4;
@@ -299,8 +294,8 @@ select {
 }
 
 textarea {
-  width: 240px;
-  height: 100px;
+  width: 300px; /* Establece el ancho deseado */
+  height: 100px; /* Establece la altura deseada para el área de texto */
   background: #FFFFFF;
   box-sizing: border-box;
   border: 1px solid #D4D4D4;
@@ -437,7 +432,6 @@ input[type=submit]:hover {
   background: #fefefe;
   border-color: purple;
 }
-
 
 .video-wrapper {
   width: 100%;
