@@ -141,6 +141,14 @@ nav .menu {
   letter-spacing: 0.08471rem;
 }
 
+form {
+  background-color: #24253C;
+  padding: 50px;
+  width: 400px;
+  box-shadow: 0 0 20px rgba(0,0,0.2);
+  opacity: 0.96;
+}
+
 .centerContact form {
   text-align: left; /* Alinea el formulario a la izquierda */
 }
@@ -179,7 +187,6 @@ nav .menu {
   font-size: 14px; /* Tamaño de fuente más grande para el botón */
   background: transparent !important;
   color: white !important;
-  border: 1px solid white;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.08471rem;
@@ -288,9 +295,9 @@ select {
   width: 300px; /* Establece el ancho deseado */
   background: #FFFFFF;
   box-sizing: border-box;
-  border: 1px solid #D4D4D4;
+  border: 2px solid #603452;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 25px !important;
 }
 
 textarea {
@@ -298,7 +305,9 @@ textarea {
   height: 100px; /* Establece la altura deseada para el área de texto */
   background: #FFFFFF;
   box-sizing: border-box;
-  border: 1px solid #D4D4D4;
+  border: 2px solid #603452;
+  border-radius: 20px;
+
 }
 
 input[type=text]:focus {
@@ -308,11 +317,11 @@ input[type=text]:focus {
 input[type=submit] {
   height: 65px;
   width: 180px;
-  border-radius: 5px;
-  border: none;
-  margin: 20px;
-  border: 2px solid black;
+  border-radius: 25px;
+  background-color: transparent;
+  border: 2px solid #603452;
   font-size: 20px;
+  margin-left: 200px;
   font-weight: 500;
   padding: 0 10px;
   cursor: pointer;
@@ -322,11 +331,12 @@ input[type=submit] {
 
 input[type=submit]:last-child {
   background: white;
+  background-color: #E53854 !important;
   color: black;
 }
 
 input[type=submit]:hover {
-  background: black;
+  background-color: black;
   color: white;
 }
 
